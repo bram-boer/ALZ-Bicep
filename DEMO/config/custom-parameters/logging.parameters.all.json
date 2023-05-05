@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parLogAnalyticsWorkspaceName": {
+      "value": "dmo-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLocation": {
+      "value": "westeurope"
+    },
+    "parLogAnalyticsWorkspaceSkuName": {
+      "value": "PerGB2018"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": 90
+    },
+    "parLogAnalyticsWorkspaceSolutions": {
+      "value": [
+        "AgentHealthAssessment",
+        "AntiMalware",
+        "ChangeTracking",
+        "Security",
+        "SecurityInsights",
+        "SQLAdvancedThreatProtection",
+        "SQLVulnerabilityAssessment",
+        "SQLAssessment",
+        "Updates",
+        "VMInsights"
+      ]
+    },
+    "parAutomationAccountName": {
+      "value": "dmo-automation-account"
+    },
+    "parAutomationAccountLocation": {
+      "value": "westeurope"
+    },
+    "parAutomationAccountUseManagedIdentity": {
+      "value": true
+    },
+    "parTags": {
+      "value": {
+        "Environment": "live"
+      }
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}
