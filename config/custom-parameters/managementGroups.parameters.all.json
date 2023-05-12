@@ -12,7 +12,7 @@
       "value": "Azure Landing Zones"
     },
     "parTopLevelManagementGroupParentId": {
-      "value": "61c9fa5a-b8a6-4cee-94a8-10801d2365cf"
+      "value": ""
     },
     "parLandingZoneMgdmoDefaultsEnable": {
       "value": true
