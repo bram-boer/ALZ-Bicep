@@ -12,7 +12,7 @@
       "value": "westeurope"
     },
     "parLogAnalyticsWorkspaceResourceId": {
-      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourcegroups/rg-BBR-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
+      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourcegroups/rg-dmo-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
     },
     "parLogAnalyticsWorkspaceLogRetentionInDays": {
       "value": "90"
@@ -24,10 +24,10 @@
       "value": "bramboer@microsoft.com"
     },
     "parDdosProtectionPlanId": {
-      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourceGroups/rg-BBR-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourceGroups/rg-dmo-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
     },
     "parPrivateDnsResourceGroupId": {
-      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourceGroups/rg-BBR-connectivity"
+      "value": "/subscriptions/88cd474c-e3ae-4116-840e-bb3190070d68/resourceGroups/rg-dmo-connectivity"
     },
     "parPrivateDnsZonesNamesToAuditInCorp": {
       "value": []
