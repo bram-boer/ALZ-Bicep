@@ -14,10 +14,10 @@
     "parTopLevelManagementGroupParentId": {
       "value": ""
     },
-    "parLandingZoneMgdmoDefaultsEnable": {
+    "parLandingZoneMgDefaultsEnable": {
       "value": true
     },
-    "parPlatformMgdmoDefaultsEnable": {
+    "parPlatformMgDefaultsEnable": {
       "value": true
     },
     "parLandingZoneMgConfidentialEnable": {
