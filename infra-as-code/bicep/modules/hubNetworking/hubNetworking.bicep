@@ -7,8 +7,8 @@ param parLocation string = resourceGroup().location
 @sys.description('Prefix value which will be prepended to all resource names.')
 param parCompanyPrefix string = 'alz'
 
-@sys.description('Prefix Used for Hub Network.')
-param parHubNetworkName string = '${parCompanyPrefix}-hub-${parLocation}'
+// @sys.description('Prefix Used for Hub Network.')
+// param parHubNetworkName string = '${parCompanyPrefix}-hub-${parLocation}'
 
 @sys.description('The IP address range for all virtual networks to use.')
 param parHubNetworkAddressPrefix string = '10.10.0.0/16'
@@ -306,7 +306,7 @@ resource resHubVnet 'Microsoft.Network/virtualNetworks@2021-08-01' = {
   dependsOn: [
     resBastionNsg
   ]
-  name: parHubNetworkName
+  name: 'dmo-hub-westeurope'
   location: parLocation
   tags: parTags
   properties: {
