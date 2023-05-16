@@ -79,7 +79,7 @@ param parDdosPlanName string = '${parCompanyPrefix}-ddos-plan'
 param parAzFirewallEnabled bool = true
 
 @sys.description('Azure Firewall Name.')
-param parAzFirewallName string = '${parCompanyPrefix}-azfw-${parLocation}'
+param parAzFirewallName string = 'dmo-azfw-euw'
 
 @sys.description('Azure Firewall Policies Name.')
 param parAzFirewallPoliciesName string = '${parCompanyPrefix}-azfwpolicy-${parLocation}'
