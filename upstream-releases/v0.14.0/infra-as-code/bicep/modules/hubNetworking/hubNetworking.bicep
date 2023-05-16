@@ -78,8 +78,8 @@ param parDdosPlanName string = '${parCompanyPrefix}-ddos-plan'
 @sys.description('Switch to enable/disable Azure Firewall deployment.')
 param parAzFirewallEnabled bool = true
 
-@sys.description('Azure Firewall Name.')
-param parAzFirewallName string = 'dmo-azfw-euw'
+// @sys.description('Azure Firewall Name.')
+// param parAzFirewallName string = 'dmo-azfw-euw'
 
 @sys.description('Azure Firewall Policies Name.')
 param parAzFirewallPoliciesName string = '${parCompanyPrefix}-azfwpolicy-${parLocation}'
@@ -598,7 +598,7 @@ module modAzureFirewallPublicIp '../publicIp/publicIp.bicep' = if (parAzFirewall
   params: {
     parLocation: parLocation
     parAvailabilityZones: parAzFirewallAvailabilityZones
-    parPublicIpName: '${parPublicIpPrefix}${parAzFirewallName}${parPublicIpSuffix}'
+    parPublicIpName: '${parPublicIpPrefix}dmo-azfw-euw${parPublicIpSuffix}'
     parPublicIpProperties: {
       publicIpAddressVersion: 'IPv4'
       publicIpAllocationMethod: 'Static'
@@ -616,7 +616,7 @@ module modAzureFirewallMgmtPublicIp '../publicIp/publicIp.bicep' = if (parAzFire
   params: {
     parLocation: parLocation
     parAvailabilityZones: parAzFirewallAvailabilityZones
-    parPublicIpName: '${parPublicIpPrefix}${parAzFirewallName}-mgmt${parPublicIpSuffix}'
+    parPublicIpName: '${parPublicIpPrefix}dmo-azfw-euw-mgmt${parPublicIpSuffix}'
     parPublicIpProperties: {
       publicIpAddressVersion: 'IPv4'
       publicIpAllocationMethod: 'Static'
@@ -653,7 +653,7 @@ resource resAzureFirewall 'Microsoft.Network/azureFirewalls@2021-08-01' = if (pa
   dependsOn: [
     resGateway
   ]
-  name: parAzFirewallName
+  name: 'dmo-azfw-euw'
   location: parLocation
   tags: parTags
   zones: (!empty(parAzFirewallAvailabilityZones) ? parAzFirewallAvailabilityZones : [])
@@ -762,7 +762,7 @@ module modCustomerUsageAttributionZtnP1 '../../CRML/customerUsageAttribution/cua
 output outAzFirewallPrivateIp string = parAzFirewallEnabled ? resAzureFirewall.properties.ipConfigurations[0].properties.privateIPAddress : ''
 
 //If Azure Firewall is enabled we will deploy a RouteTable to redirect Traffic to the Firewall.
-output outAzFirewallName string = parAzFirewallEnabled ? parAzFirewallName : ''
+output outAzFirewallName string = parAzFirewallEnabled ? 'dmo-azfw-euw' : ''
 
 output outPrivateDnsZones array = (parPrivateDnsZonesEnabled ? modPrivateDnsZones.outputs.outPrivateDnsZones : [])
 output outPrivateDnsZonesNames array = (parPrivateDnsZonesEnabled ? modPrivateDnsZones.outputs.outPrivateDnsZonesNames : [])
