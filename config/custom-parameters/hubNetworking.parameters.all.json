@@ -8,11 +8,6 @@
     "parCompanyPrefix": {
       "value": "dmo"
     },
-    "parHubNetworkName": {
-      "value": [
-        "dmo-hub-westeurope"
-      ]
-    },
     "parHubNetworkAddressPrefix": {
       "value": "10.20.0.0/16"
     },
