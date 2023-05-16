@@ -72,11 +72,6 @@
     "parAzFirewallEnabled": {
       "value": true
     },
-    "parAzFirewallName": {
-      "value": [
-        "dmo-azfw-westeurope"
-      ]
-    },
     "parAzFirewallPoliciesName": {
       "value": "dmo-azfwpolicy-westeurope"
     },
