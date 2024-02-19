@@ -19,6 +19,10 @@
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Append-Redis-sslEnforcement.json')
 }
 {
+	name: 'Audit-AzureHybridBenefit'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Audit-AzureHybridBenefit.json')
+}
+{
 	name: 'Audit-Disks-UnusedResourcesCostOptimization'
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Audit-Disks-UnusedResourcesCostOptimization.json')
 }
@@ -197,6 +201,14 @@
 {
 	name: 'Deny-VNet-Peering'
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deny-VNet-Peering.json')
+}
+{
+	name: 'DenyAction-ActivityLogs'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_DenyAction-ActivityLogs.json')
+}
+{
+	name: 'DenyAction-DiagnosticLogs'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_DenyAction-DiagnosticLogs.json')
 }
 {
 	name: 'Deploy-ASC-SecurityContacts'
@@ -431,6 +443,26 @@
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-FirewallPolicy.json')
 }
 {
+	name: 'Deploy-MDFC-Arc-SQL-DCR-Association'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MDFC-Arc-SQL-DCR-Association.json')
+}
+{
+	name: 'Deploy-MDFC-Arc-Sql-DefenderSQL-DCR'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MDFC-Arc-Sql-DefenderSQL-DCR.json')
+}
+{
+	name: 'Deploy-MDFC-SQL-AMA'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MDFC-SQL-AMA.json')
+}
+{
+	name: 'Deploy-MDFC-SQL-DefenderSQL-DCR'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MDFC-SQL-DefenderSQL-DCR.json')
+}
+{
+	name: 'Deploy-MDFC-SQL-DefenderSQL'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MDFC-SQL-DefenderSQL.json')
+}
+{
 	name: 'Deploy-MySQL-sslEnforcement'
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-MySQL-sslEnforcement.json')
 }
@@ -463,6 +495,10 @@
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-Sql-Tde.json')
 }
 {
+	name: 'Deploy-Sql-vulnerabilityAssessments_20230706'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-Sql-vulnerabilityAssessments_20230706.json')
+}
+{
 	name: 'Deploy-Sql-vulnerabilityAssessments'
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-Sql-vulnerabilityAssessments.json')
 }
@@ -473,6 +509,10 @@
 {
 	name: 'Deploy-Storage-sslEnforcement'
 	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-Storage-sslEnforcement.json')
+}
+{
+	name: 'Deploy-UserAssignedManagedIdentity-VMInsights'
+	libDefinition: loadJsonContent('lib/policy_definitions/policy_definition_es_Deploy-UserAssignedManagedIdentity-VMInsights.json')
 }
 {
 	name: 'Deploy-Vm-autoShutdown'

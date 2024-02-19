@@ -1,4 +1,4 @@
-name: ALZ-Bicep-PR-2 Workflow
+name: ALZ-Bicep-PR2-Lint
 
 on:
   pull_request:
@@ -7,12 +7,12 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  pr_lint:
+  ALZ_Bicep_PR2_Lint:
     name: Lint Code Base (except Bicep Modules and Files)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -27,4 +27,4 @@ jobs:
           VALIDATE_POWERSHELL: true
           VALIDATE_YAML: true
           VALIDATE_EDITORCONFIG: true
-          FILTER_REGEX_EXCLUDE: ".*generateddocs/.*.bicep.md"
+          FILTER_REGEX_EXCLUDE: ".*upstream-releases/*|.*generateddocs/.*.bicep.md"

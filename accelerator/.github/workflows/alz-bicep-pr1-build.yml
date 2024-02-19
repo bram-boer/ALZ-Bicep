@@ -1,4 +1,4 @@
-name: ALZ-Bicep-PR-1 Workflow
+name: ALZ-Bicep-PR1-Build
 
 on:
   pull_request:
@@ -14,12 +14,12 @@ permissions:
   contents: read
 
 jobs:
-  pr_lint:
+  ALZ_Bicep_PR1_Build:
     name: Bicep Build & Lint All Modules
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
